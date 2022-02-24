@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Roboto&display=swap');
+ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-repeat: repeat-x;
+ 
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url(lyricsapp.jpg)
+    
+    
+}
+header{
+    padding: 30px;
+    height: 90vh;
+    border: none;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+}
+.container{
+    position: relative;
+    font-size: white;
+    top: 40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+}.container h1{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+form{
+    position: relative;
+    display: flex;
+    width: 500px;
+}
+input{
+     width: 100%;
+     max-width: 100%;
+     height: 45px;
+     padding: 15px 30px;
+     border-radius: 50px;
+     border: none;
+     outline: none;
+     justify-content: center;
+     position: relative;
+     left: 50%;
+     margin-left: -20px;
+}
+button{
+    width: 100px;
+    max-width: 100%;
+background: rgb(14, 192, 67);
+color: white;
+border-radius: 50px;
+border: none;
+position: absolute;
+right: -225px;
+bottom: 2px;
+top: 2px;
+font-weight: 600;
+outline: none;
+}
+button:hover{
+    transform: scale(0.96);
+}
+.result{
+    color: rgb(114, 60, 60);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+    position: relative;
+}
+header h1{
+    color: aqua;
+}
+h1{
+    margin-right: 270px;
+}
+.song-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.song-list-li{
+    margin-bottom: 20px;
+    width: 500px;
+    justify-content: space-evenly;
+    letter-spacing: 1px;
+    font-weight: 500px;
+    font-size: 18px;
+    text-decoration: overline;
+    position:relative
+}
+.song-list li::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    left: -20px;
+    bottom: -4px;
+    height: 3px;
+    background-color: aqua;
+    display: inline-block;
+}
+.song-list li div{
+    float:left
+}
+.song-list li span{
+    float: right;
+    background-color: rgb(34, 250, 6);
+    border: 0;
+    font-size: 12px;
+    border-radius: 10px;
+    color: azure;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 4px 10px;
+    text-transform: capitalize;
+   
+}
+
+section h1{ 
+    position: absolute;
+    background-color: darkblue;
+}
+
+
+  
+.result{
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 20px;
+    position: relative;
+    display: block;
+}
+li{
+    list-style: none;
+}
+@media only screen and (max-width: 800px) {
+    header{
+        height: 70vh;
+        width: 95%vw;
+    }
+    .container{
+        font-size: 20px;
+        
+    }
+    form{
+        max-width: 300px;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        padding: 12px 20px;
+  
+    }
+    button{
+        width: 80px;
+        max-width: 100%;
+    }
+    .song-list li{
+        margin-bottom: 15px;
+        max-width: 300px;
+        letter-spacing: 0.5px;
+        font-size: 17px;
+        
+    }
+   
+    
+  }
